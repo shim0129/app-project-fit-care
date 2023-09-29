@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListReset">
+
+    <Button
+        android:id="@+id/bt_datareg"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_patter"
+        android:fontFamily="@font/aldrich"
+        android:text="Regiter"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/et_set"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_set"
+        app:layout_constraintTop_toBottomOf="@+id/et_set"
+        app:layout_constraintVertical_bias="0.066"
+        app:strokeColor="#3DAAB8" />
+
+    <TextView
+        android:id="@+id/tv_acttime"
+        android:layout_width="100dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="30dp"
+        android:text="Time/Set"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/et_rename"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_rename"
+        app:layout_constraintTop_toBottomOf="@+id/et_rename" />
+
+    <TextView
+        android:id="@+id/tv_acttime2"
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:text="Set Count"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/et_retime"
+        app:layout_constraintStart_toStartOf="@+id/et_retime"
+        app:layout_constraintTop_toBottomOf="@+id/et_retime" />
+
+    <TextView
+        android:id="@+id/app_title5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:fontFeatureSettings="20.sp"
+        android:text="Fit Care"
+        android:textColor="#67CEDC"
+        android:textSize="50sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_retime"
+        android:layout_width="211dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="ex) 3"
+        android:inputType="date"
+        android:textColor="#03A9F4"
+        android:textColorHint="#03A9F4"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_acttime"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="@+id/tv_acttime"
+        app:layout_constraintTop_toBottomOf="@+id/tv_acttime" />
+
+    <EditText
+        android:id="@+id/et_set"
+        android:layout_width="211dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="ex) 5"
+        android:inputType="date"
+        android:textColor="#03A9F4"
+        android:textColorHint="#03A9F4"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tv_acttime2"
+        app:layout_constraintStart_toStartOf="@+id/tv_acttime2"
+        app:layout_constraintTop_toBottomOf="@+id/tv_acttime2" />
+
+    <TextView
+        android:id="@+id/tv_rename"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Activity Name"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/app_title5"
+        app:layout_constraintStart_toStartOf="@+id/app_title5"
+        app:layout_constraintTop_toBottomOf="@+id/app_title5" />
+
+    <EditText
+        android:id="@+id/et_rename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="ex)Lunges"
+        android:inputType="text"
+        android:textColor="#03A9F4"
+        android:textColorHint="#03A9F4"
+        app:layout_constraintEnd_toEndOf="@+id/tv_rename"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_rename"
+        app:layout_constraintTop_toBottomOf="@+id/tv_rename"
+        tools:textStyle="bold" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

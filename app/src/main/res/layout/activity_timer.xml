@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimerActivity">
+
+    <Button
+        android:id="@+id/bt_finish"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/button_patter"
+        android:text="Finish"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/get_count" />
+
+    <Button
+        android:id="@+id/bt_start"
+        android:layout_width="96dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/white"
+        android:fontFamily="@font/days_one"
+        android:text="Start"
+        android:textAllCaps="false"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/bt_reset"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="@+id/get_name"
+        app:layout_constraintTop_toBottomOf="@+id/get_name"
+        tools:backgroundTint="#3F51B5" />
+
+    <Button
+        android:id="@+id/bt_reset"
+        android:layout_width="96dp"
+        android:layout_height="66dp"
+        android:background="@color/white"
+        android:fontFamily="@font/days_one"
+        android:text="Reset"
+        android:textAllCaps="false"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_start"
+        app:layout_constraintEnd_toEndOf="@+id/get_name"
+        app:layout_constraintTop_toTopOf="@+id/bt_start"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bt_check"
+        android:layout_width="96dp"
+        android:layout_height="66dp"
+        android:background="@color/white"
+        android:fontFamily="@font/days_one"
+        android:text="check"
+        android:textAllCaps="false"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/get_count"
+        app:layout_constraintEnd_toEndOf="@+id/bt_reset"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/get_count"
+        app:layout_constraintTop_toTopOf="@+id/get_count"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <ImageView
+        android:id="@+id/get_profile"
+        android:layout_width="273dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/exercise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/app_title4"
+        app:layout_constraintTop_toBottomOf="@+id/app_title4" />
+
+    <TextView
+        android:id="@+id/app_title4"
+        android:layout_width="0dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="sans-serif-medium"
+        android:fontFeatureSettings="20.sp"
+        android:text="Fit Care"
+        android:textColor="#67CEDC"
+        android:textSize="48sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/get_name"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:text="TextView"
+        android:textColor="#03A9F4"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/get_profile"
+        app:layout_constraintStart_toStartOf="@+id/get_profile"
+        app:layout_constraintTop_toBottomOf="@+id/get_profile"
+        tools:fontFamily="@font/days_one" />
+
+    <TextView
+        android:id="@+id/get_count"
+        android:layout_width="126dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/days_one"
+        android:text="아아아아"
+        android:textColor="#03A9F4"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toStartOf="@+id/bt_reset"
+        app:layout_constraintStart_toEndOf="@+id/tv_timer"
+        app:layout_constraintTop_toBottomOf="@+id/bt_start" />
+
+    <TextView
+        android:id="@+id/tv_realcount"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/days_one"
+        android:text="0"
+        android:textColor="#03A9F4"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/get_count"
+        app:layout_constraintEnd_toStartOf="@+id/get_count"
+        app:layout_constraintTop_toTopOf="@+id/get_count"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/days_one"
+        android:text="timer"
+        android:textColor="#03A9F4"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_start"
+        app:layout_constraintEnd_toStartOf="@+id/bt_start"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/get_name"
+        app:layout_constraintTop_toTopOf="@+id/bt_start"
+        app:layout_constraintVertical_bias="0.48000002" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
