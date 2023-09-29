@@ -1,5 +1,6 @@
 # app-project-fit-care
 첫 앱 만들기
 
-![image](https://github.com/shim0129/app-project-fit-care/assets/111476066/a1aea492-2406-4130-8561-18a35b80afd8)
-![image](https://github.com/shim0129/app-project-fit-care/assets/111476066/18fbcd97-4815-4e60-b85e-4886e7ab7c65)
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/7739117f-1217-4b59-971b-3ef6ecd509f2/6317ca43-6eca-49cf-861b-18549f29cbc0/Untitled.png)
+
+https://www.notion.so/2fb37043146843b69a4268b9e53165e7?pvs=4 
